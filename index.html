@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <title>Zoomies · Wallet test environment</title>
+  <link rel="icon" href="zoomies-icon.png">
+  <style>
+    :root{font-family:system-ui,sans-serif;color:#eaf8ff;background:#10172d;color-scheme:dark}
+    body{margin:0;min-height:100vh;display:grid;place-items:center;background:radial-gradient(ellipse at 0 0,#393771,transparent 70%),#10172d}
+    main{max-width:660px;margin:24px;padding:clamp(24px,5vw,48px);border:1px solid #5588a6;border-radius:24px;background:#17263b}
+    img{width:128px;height:auto;image-rendering:auto} .tag{color:#6fe6fa;font-weight:750;letter-spacing:.12em;font-size:12px;text-transform:uppercase}
+    h1{font-size:clamp(26px,5vw,38px);line-height:1.1;margin:16px 0}p,li{line-height:1.65;color:#c6d8e8}li{margin:8px 0}a{color:#80e6fa;text-underline-offset:4px}strong{color:white}
+    .notice{border-left:3px solid #ff70bf;padding:8px 18px;background:#23304a;border-radius:0 8px 8px 0}
+    footer{margin-top:32px;font-size:13px;border-top:1px solid #405573;padding-top:16px}
+  </style>
+</head>
+<body><main>
+  <img src="zoomies-icon.png" alt="Zoomies">
+  <p class="tag">Separate test environment</p>
+  <h1>Wallet testing for Zoomies</h1>
+  <p>This site hosts the public files used by the local Zoomies wallet integration. The game, account data and payment verification continue to run on the developer's computer.</p>
+  <div class="notice"><p><strong>Testnet only for payments.</strong> Zoomies Test GRAM (zGRAM-TEST) has no monetary value and is separate from the real GRAM cryptocurrency. Test credits cannot be withdrawn or spent in the live game.</p></div>
+  <ul>
+    <li><a href="tonconnect-manifest.json">TON Connect manifest</a> identifies the test application to the wallet.</li>
+    <li><a href="test-gram.json">Test-token metadata</a> identifies the non-monetary test token.</li>
+    <li>Mainnet collection verification in the local game is read-only.</li>
+  </ul>
+  <p>Open the wallet panel in your locally running Zoomies game to connect. This static site has no payment form or wallet-signing code.</p>
+  <footer>No private keys, recovery phrases, user accounts or game source are hosted here. This page uses no analytics or application cookies; GitHub Pages handles hosting requests.</footer>
+</main></body>
+</html>
